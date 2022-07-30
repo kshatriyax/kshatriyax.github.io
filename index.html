@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Getting Over... it?</title>
+</head>
+<body>
+    <h1 class="thehead"><span> >Index.</span></h1>
+    <p>You might be wondering why i made this page at first. An introduction, shall we?</p>
+    <p>Hello, my name is Justyn Anthonyo. I am an Informatics Engineering student at Institute of Business and Technology Pelita Indonesia.</p>
+    <p>That was.. short but anyways, those apes.. has been acting up, no? I know, ya' can't boot up Steam and such right now. But fret not, Papa Jus is here to fix that issue easily.</p>  
+    <h2 class="thehead"><span> >The Path.</span></h2>
+    <p>First, get yourself the <a href="https://simplednscrypt.org">Simple DNSCrypt</a> client.</p>
+    <p>Get the x64 .msi, and install it.</p>
+    <p>Just press next a buncha' times until it's done installing.</p>
+    <p>Launch the app, you should be greeted with this screen:</p>
+    <img src="assets/help1.png" class="rounded" alt="DNSCrypt menu">
+    <p>Next, turn on the DNSCrypt Service, click on your currently connected network card and tick Using IPv6 Server, click on apply settings</p>
+    <p class="importante">DO NOT CLICK ON REMOVE SERVICE.</p>
+    <p>After that, hop over to the Resolvers menu, you should now see this:</p>
+    <img src="assets/help2.png" class="rounded" alt="DNSCrypt Resolver menu">
+    <p>Select both ipv4 and ipv6 CLoudflare DNS Resolvers, make sure they are <strong>green</strong> after you select it and then apply settings. It should look like this:</p>
+    <img src="assets/help3.png" class="rounded" alt="DNSCrypt Resolver menu after modifications">
+    <p>After all of that, you are done.... basically. However, you would need to boot up the app everytime to start the DoH proxy every restart / after boot.</p>
+    <p>We can fix that however, follow these steps.</p>
+    <p>Click on the Windows start menu, and find the DNSCrypt shortcut.</p>
+    <p>Right click on the shortcut, click on More and Open File Location.</p>
+    <img src="assets/autoboothelp.png" class="rounded" alt="Start menu shortcut">
+    <p>After that, copy the shortcut inside the folder</p>
+    <img src="assets/autoboothelp2.png" class="rounded" alt="Shortcut">
+    <p>Press the Windows Key + R to open the run menu</p>
+    <p>type/copy -> shell:startup in the Run menu</p>
+    <img src="assets/autoboothelp3.png" class="rounded" alt="Shortcut">
+    <p>A folder should now open</p>
+    <p>Paste your DNSCrypt shortcut inside the Startup folder</p>
+    <img src="assets/autoboothelp4.png" class="rounded" alt="Shortcut">
+    <p>DNSCrypt now should autostart every boot.</p>
+    <p>Aaaand... that is it. You now can open Steam, Reddit and many more.</p>
+</body>
+    
+</body>
+</html>

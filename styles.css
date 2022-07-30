@@ -1,0 +1,50 @@
+body {
+    background-color: #bddeab;
+}
+
+@font-face {
+    font-family: jBmono;
+    src: url('assets/JetBrainsMono-Regular.woff2') format('woff2');
+  }
+
+@font-face {
+    font-family: jBbold;
+    src: url('assets/JetBrainsMono-Bold.woff2') format('woff2');
+  }
+
+p {
+    font-family: jBmono;
+    margin-left: 20px;
+    margin-right: 200px;
+    border-left: 2px solid #81f244;
+    border-width: 4px;
+    background-color: #d3ffd1;
+  }
+
+.importante{
+    font-family: jBbold;
+    color: red;
+}
+
+h1 {
+    font-family: jBbold;
+}
+
+h2 {
+    font-family: jBbold;
+}
+
+.thehead {
+    color:#81f244;
+}
+
+.thehead span {
+    background-color: black;
+}
+
+.rounded {
+    border-radius: 8px;
+    padding: 5px;
+    width: 650px;
+    height: auto;
+}
