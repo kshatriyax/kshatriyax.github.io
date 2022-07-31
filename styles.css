@@ -34,6 +34,10 @@ h2 {
     font-family: jBbold;
 }
 
+h3 {
+    font-family: jBmono;
+}
+
 .thehead {
     color:#81f244;
 }
@@ -47,4 +51,15 @@ h2 {
     padding: 5px;
     width: 650px;
     height: auto;
+}
+
+.flavor {
+    color: red;
+    text-align: center;
+}
+
+.flavor span {
+    color: red;
+    background-color: black;
+    
 }
