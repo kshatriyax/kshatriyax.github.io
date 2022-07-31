@@ -1,46 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Getting Over... it?</title>
-</head>
-<body>
-    <h1 class="thehead"><span> >Index.</span></h1>
-    <p>You might be wondering why i made this page at first. An introduction, shall we?</p>
-    <p>Hello, my name is Justyn Anthonyo. For others, you may know me more as Bunta or Minarie. I am an Informatics Engineering student at Institute of Business and Technology Pelita Indonesia.</p>
-    <p>That was.. short(?) but anyways, I know, those apes.. has been acting up, no?, I heard ya' can't boot up Steam and such right now. But fret not, Papa Jus is here to fix that issue easily.</p>  
-    <h2 class="thehead"><span> >The Path.</span></h2>
-    <p>First, get yourself the <a href="https://simplednscrypt.org">Simple DNSCrypt</a> client.</p>
-    <p>Get the x64 .msi, and install it.</p>
-    <p>Just press next a buncha' times until it's done installing.</p>
-    <p>Launch the app, you should be greeted with this screen:</p>
-    <img src="assets/help1.png" class="rounded" alt="DNSCrypt menu">
-    <p>Next, turn on the DNSCrypt Service, click on your currently connected network card and tick Using IPv6 Server, click on apply settings</p>
-    <p class="importante">DO NOT CLICK ON REMOVE SERVICE.</p>
-    <p>After that, hop over to the Resolvers menu, you should now see this:</p>
-    <img src="assets/help2.png" class="rounded" alt="DNSCrypt Resolver menu">
-    <p>Select both ipv4 and ipv6 CLoudflare DNS Resolvers, make sure they are <strong>green</strong> after you select it and then apply settings. It should look like this:</p>
-    <img src="assets/help3.png" class="rounded" alt="DNSCrypt Resolver menu after modifications">
-    <p>After all of that, you are done.... basically. However, you would need to boot up the app everytime to start the DoH proxy every restart / after boot.</p>
-    <p>We can fix that however, follow these steps.</p>
-    <p>Click on the Windows start menu, and find the DNSCrypt shortcut.</p>
-    <p>Right click on the shortcut, click on More and Open File Location.</p>
-    <img src="assets/autoboothelp.png" class="rounded" alt="Start menu shortcut">
-    <p>After that, copy the shortcut inside the folder</p>
-    <img src="assets/autoboothelp2.png" class="rounded" alt="Shortcut">
-    <p>Press the Windows Key + R to open the run menu</p>
-    <p>type/copy -> shell:startup in the Run menu</p>
-    <img src="assets/autoboothelp3.png" class="rounded" alt="Shortcut">
-    <p>A folder should now open</p>
-    <p>Paste your DNSCrypt shortcut inside the Startup folder</p>
-    <img src="assets/autoboothelp4.png" class="rounded" alt="Shortcut">
-    <p>DNSCrypt now should autostart every boot.</p>
-    <p>Aaaand... that is it. You now can open Steam, Reddit and many more.</p>
-    <h3 class="flavor"><span>#downwiththeblockade</span></h3>
-</body>
-    
-</body>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>KshatriyaX - L'Links</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preload" href="./images/background.jpg" as="image" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      VANTA.BIRDS({
+        el: "#vanta",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: true,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        backgroundAlpha: 0.0,
+        color2: 0xff00f0,
+        wingSpan: 40.00,
+        separation: 100.00,
+        alignment: 77.00,
+        cohesion: 5.00,
+        quantity: 1.00
+      })
+
+      setTimeout(() => {
+        const main = document.querySelector('main')
+        main.style.opacity = 1
+        main.style.filter = 'blur(0px)'
+      }, 1000)
+    })
+    </script>
+  </head>
+  <body>
+    <div id="vanta"></div>
+    <main class="animated">
+      <header>
+        <img src="./images/kshatriya.jpg" />
+        <h1>kshatriyax@bio-links $</h1>
+      </header>
+      <ul>
+        <li>
+          <a href="https://www.craftz.dog/">
+            <img src="./images/homepage.svg" alt="Homepage" width="20" />
+            www.craftz.dog
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCCGKKQNyLTaA5a4oao-2heA">
+            <img src="./images/youtube.svg" alt="YouTube" width="20" />
+            YouTube
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com/9xjust">
+            <img src="./images/instagram.svg" alt="Instagram" width="20" />
+            Instagram
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/kshatriyax">
+            <img src="./images/github.svg" alt="GitHub" width="20" />
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a href="dnshelp.html">
+            <img src="./images/homepage.svg" alt="DNSCrypt" width="20" />
+            DNSCrypt Guide
+          </a>
+        </li>
+      </ul>
+    </main>
+  </body>
 </html>

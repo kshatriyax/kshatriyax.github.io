@@ -4,12 +4,12 @@ body {
 
 @font-face {
     font-family: jBmono;
-    src: url('assets/JetBrainsMono-Regular.woff2') format('woff2');
+    src: url('./fonts/JetBrainsMono-Regular.woff2') format('woff2');
   }
 
 @font-face {
     font-family: jBbold;
-    src: url('assets/JetBrainsMono-Bold.woff2') format('woff2');
+    src: url('./fonts/JetBrainsMono-Bold.woff2') format('woff2');
   }
 
 p {
@@ -37,6 +37,7 @@ h2 {
 h3 {
     font-family: jBmono;
 }
+
 
 .thehead {
     color:#81f244;
